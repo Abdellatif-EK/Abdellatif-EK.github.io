@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdellatif EL KERBANI | Full Stack Engineer</title>
+    <title>Abdellatif EL KERBANI - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -115,9 +116,9 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 dark:bg-dark-900 dark:text-gray-100 transition-colors duration-300">
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300">
     <!-- Header/Navigation -->
-    <header class="fixed w-full bg-white/80 dark:bg-dark-800/80 backdrop-blur-md z-50 shadow-sm">
+    <header class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <a href="#" class="text-2xl font-bold gradient-text">AEK</a>
@@ -125,7 +126,7 @@
                 <nav class="hidden md:flex space-x-8">
                     <a href="#home" class="nav-link">Home</a>
                     <a href="#about" class="nav-link">About</a>
-                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#experience" class="nav-link">Studies & Experience</a>
                     <a href="#projects" class="nav-link">Projects</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </nav>
@@ -147,7 +148,7 @@
             <div class="flex flex-col space-y-4">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#experience" class="nav-link">Studies & Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
@@ -431,7 +432,7 @@
     <section id="experience" class="py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12">
-                <span class="gradient-text">My Experience</span>
+                <span class="gradient-text">Studies & Experience</span>
             </h2>
             
             <div class="max-w-4xl mx-auto">
@@ -520,32 +521,37 @@
                                 </div>
                                 <p class="text-primary-600 dark:text-primary-400 font-medium mb-2">Microservices DevOps Web Application</p>
                                 <p class="text-gray-600 dark:text-gray-300 mb-4">
-                                    Contributed to the development of an internal web platform enabling team members to deploy their projects.
+                                    Developed two microservices within: one for advanced source code search and another for HR management. 
                                 </p>
                                 <ul class="space-y-2">
                                     <li class="flex items-start">
                                         <i class="fas fa-check-circle text-primary-500 mt-1 mr-2"></i>
-                                        <span>Built functionalities to track monthly points and working hours using a custom Discord bot</span>
+                                        <span>Implemented a Java-based microservice for managing leave and absence requests, including HR validation based on availability and justification.</span>
                                     </li>
                                     <li class="flex items-start">
                                         <i class="fas fa-check-circle text-primary-500 mt-1 mr-2"></i>
-                                        <span>Implemented leave and absence request workflows with HR validation logic</span>
+                                        <span>Built a Golang microservice for advanced code search, accessible via both the web application and a Discord chatbot. </span>
                                     </li>
                                     <li class="flex items-start">
                                         <i class="fas fa-check-circle text-primary-500 mt-1 mr-2"></i>
-                                        <span>Integrated Elasticsearch to enable source code search across all company projects</span>
+                                        <span>Integrated Elasticsearch for indexing and searching code across all GitLab hosted projects. </span>
                                     </li>
                                     <li class="flex items-start">
                                         <i class="fas fa-check-circle text-primary-500 mt-1 mr-2"></i>
-                                        <span>Worked in a DevOps environment with CI/CD pipelines and container orchestration</span>
+                                        <span>Worked in a DevOps environment with CI/CD pipelines, container orchestration, and service deployment.</span>
                                     </li>
                                 </ul>
                                 <div class="mt-4 flex flex-wrap gap-2">
                                     <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">Java Spring Boot</span>
+                                    <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">Golang</span>
                                     <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">Next.js</span>
                                     <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">GitLab</span>
+                                    <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">CI/CD</span>
                                     <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">Kubernetes</span>
+                                    <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">ArgoCD</span>
                                     <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">Elasticsearch</span>
+                                    <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">PostgreSQL</span>
+                                    <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">Amazon S3</span>
                                     <span class="bg-gray-100 dark:bg-dark-600 px-2 py-1 rounded text-xs">Discord API</span>
                                 </div>
                             </div>
@@ -580,7 +586,7 @@
                                     </li>
                                     <li class="flex items-start">
                                         <i class="fas fa-check-circle text-primary-500 mt-1 mr-2"></i>
-                                        <span>Collaborated with a coach to align the application with user needs</span>
+                                        <span>Collaborated with a coach to align thQe application with user needs</span>
                                     </li>
                                 </ul>
                                 <div class="mt-4 flex flex-wrap gap-2">
@@ -644,8 +650,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- TourRider -->
                 <div class="project-card rounded-xl overflow-hidden shadow-lg transition-all duration-500">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="TourRider" class="w-full h-full object-cover">
+                    <div class="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-primary-900 to-transparent opacity-70"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">TourRider</h3>
@@ -684,8 +689,7 @@
                 
                 <!-- Plant Disease Detection -->
                 <div class="project-card rounded-xl overflow-hidden shadow-lg transition-all duration-500">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Plant Disease Detection" class="w-full h-full object-cover">
+                    <div class="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-primary-900 to-transparent opacity-70"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Plant Disease Detection</h3>
@@ -722,8 +726,7 @@
                 
                 <!-- E-Commerce Microservices -->
                 <div class="project-card rounded-xl overflow-hidden shadow-lg transition-all duration-500">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="E-Commerce Microservices" class="w-full h-full object-cover">
+                    <div class="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-primary-900 to-transparent opacity-70"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">E-Commerce Microservices</h3>
@@ -909,24 +912,19 @@
         // Dark mode toggle
         const themeToggle = document.getElementById('theme-toggle');
         const themeIcon = document.getElementById('theme-icon');
-        const html = document.documentElement;
         
-        // Check for saved user preference or use system preference
-        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            html.classList.add('dark');
+        // Set dark mode as default
+        if (!localStorage.getItem('theme') || localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
             themeIcon.classList.remove('fa-moon');
             themeIcon.classList.add('fa-sun');
-        } else {
-            html.classList.remove('dark');
-            themeIcon.classList.remove('fa-sun');
-            themeIcon.classList.add('fa-moon');
         }
         
         // Toggle theme on button click
         themeToggle.addEventListener('click', () => {
-            html.classList.toggle('dark');
+            document.documentElement.classList.toggle('dark');
             
-            if (html.classList.contains('dark')) {
+            if (document.documentElement.classList.contains('dark')) {
                 localStorage.setItem('theme', 'dark');
                 themeIcon.classList.remove('fa-moon');
                 themeIcon.classList.add('fa-sun');
